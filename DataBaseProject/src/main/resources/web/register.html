@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Stylesheet.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="ctrl">
+<div id="RegisterPane">
+    <img class="RegPane" src="img/RegisterPane.png">
+    <img class="NameImput" src="img/input.png">
+    <input id="Name" class="Name" type="text" ng-model="name" placeholder="Imie"><br>
+    <input id="Surname" class="Surname" type="text" ng-model="surname" placeholder="Nazwisko"><br>
+    <img class="SurnameInput" src="img/input.png">
+    <SELECT class="Project" ng-model="project" NAME="Project" style="width: 120px;">
+        <OPTION>Reklamacje</OPTION>
+        <OPTION>Infolinia</OPTION>
+        <OPTION>BO</OPTION>
+    </SELECT><br>
+    <img class="ProjectInput" src="img/input.png">
+    <select class="Group" ng-model="group" name="Group" style="width: 120px;">
+        <option>Olsztyn</option>
+        <option>Gdańsk</option>
+        <option>Białystok</option>
+    </select><br>
+    <img class="GroupInput" src="img/input.png">
+
+    <input class="submit" ng-click="fetch()" type="submit">
+</div>
+<script src="Scripts.js"></script>
+</body>
+</html>
