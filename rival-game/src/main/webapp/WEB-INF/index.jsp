@@ -39,7 +39,7 @@
     <img src="web/img/input.png">
 </div>
 <div class="RegButt">
-    <a href="register.html">Rejestracja</a>
+    <a href="register.jsp">Rejestracja</a>
 </div>
 
 <script src="web/templates/angular.min.js"></script>
