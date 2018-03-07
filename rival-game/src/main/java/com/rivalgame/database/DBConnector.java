@@ -1,48 +1,46 @@
 package com.rivalgame.database;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import com.rivalgame.characters.Characters;
 import org.springframework.stereotype.Component;
 
-public class DBConnector {
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
-    SessionFactory sessionFactory;
+@Component
+public class DBConnector implements DataB {
 
-    public void saving(Object object){
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        session.save(object);
-        session.getTransaction().commit();
-        session.close();
+
+    EntityManagerFactory sessionFactory;
+    EntityManager entityManager;
+
+    @Override
+    public void setUp() throws Exception {
+       EntityManagerFactory sessionFactory= Persistence.createEntityManagerFactory("transcom");
+
     }
 
-    /* public void reading(){
-         Session session = sessionFactory.openSession();
-         session.beginTransaction();
-         List result = session.createQuery("from CharacterInfo").list();
-         for ( CharacterInfo characterInfo : (List<CharacterInfo>) result ) {
-             System.out.println( "CharacterInfo (" + characterInfo.getLogin() + ") : " + characterInfo.getLogin() );
-         }
-         session.getTransaction().commit();
-         session.close();
-     }
-
- */
-    protected void setUp() throws Exception {
-
-        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure()
-                .build();
-
-        try {
-            sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+    @Override
+    public void save(Characters characters) {
+        entityManager = sessionFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+        entityManager.persist(characters);
+        entityManager.getTransaction().commit();
+        entityManager.close();
 
 
-        } catch (Exception e) {
-            StandardServiceRegistryBuilder.destroy(registry);
-        }
+
+    }
+
+    @Override
+    public void read() {
+        sessionFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+        //List<Characters> charactersList = entityManager.createQuery("from Characters ", Characters.class);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+
     }
 }
-
