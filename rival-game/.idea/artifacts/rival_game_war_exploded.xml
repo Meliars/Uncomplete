@@ -58,7 +58,7 @@
           <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.2.14.Final" />
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.7.10" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.45" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.6" />
           <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.3.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.4.RELEASE" />
