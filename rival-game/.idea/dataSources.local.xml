@@ -10,5 +10,14 @@
       <user-name>root</user-name>
       <introspection-schemas>*:library,mysql,transcom</introspection-schemas>
     </data-source>
+    <data-source name="transcom-db/Hibernate" uuid="32664e0e-6c7b-4d4e-a4dd-923ee3ed2e81">
+      <database-info product="MySQL" version="5.7.20" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <user-name>root</user-name>
+      <introspection-schemas>*:transcom</introspection-schemas>
+    </data-source>
   </component>
 </project>
