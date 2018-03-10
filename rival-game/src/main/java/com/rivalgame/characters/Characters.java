@@ -11,8 +11,7 @@ import java.io.Serializable;
 public class Characters implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO  )
+    @Id @GeneratedValue
     private Long idEmployer;
     private String nameEmployer;
     private String surnameEmployer;

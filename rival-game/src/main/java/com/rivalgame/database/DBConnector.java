@@ -16,7 +16,7 @@ public class DBConnector implements DataB {
 
     @Override
     public void setUp() throws Exception {
-       EntityManagerFactory sessionFactory= Persistence.createEntityManagerFactory("transcom-db");
+        sessionFactory= Persistence.createEntityManagerFactory("transcom-db");
 
     }
 
@@ -24,7 +24,7 @@ public class DBConnector implements DataB {
     public void save(Characters characters) {
         entityManager = sessionFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(characters);
+        entityManager.merge(characters);
         entityManager.getTransaction().commit();
         entityManager.close();
 
@@ -36,7 +36,7 @@ public class DBConnector implements DataB {
     public void read() {
         sessionFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        //List<Characters> charactersList = entityManager.createQuery("from Characters ", Characters.class);
+        // some magic here //
         entityManager.getTransaction().commit();
         entityManager.close();
 
