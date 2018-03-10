@@ -1,0 +1,160 @@
+
+body{
+    background-image: url("../img/tlo_logowania.jpg");
+}
+.Welcome {
+    width: 100%;
+    background-image: url("../img/top.png");
+    text-align: center;
+
+}
+
+.LogPanel{
+    position: fixed;
+    width: 543px;
+    height: 275px;
+    margin-left: 600px;
+    
+}
+.LogInput{
+    position: absolute;
+    z-index: 1;
+    margin-left: 875px;
+    margin-top: 115px;
+
+}
+.Login {
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.Password{
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.LogInputPanel{
+    position: fixed;
+    z-index: 0;
+    margin-left: 800px;
+    margin-top: 100px;
+
+}
+
+.PassInput{
+    position: absolute;
+    z-index: 1;
+    margin-left: 875px;
+    margin-top: 170px;
+}
+.PassInputPanel{
+    position: fixed;
+    z-index: 0;
+    margin-left: 800px;
+    margin-top: 155px;
+}
+
+.RegPane{
+    position: absolute;
+    margin: auto;
+    margin-left: 600px;
+    margin-top: 25px;
+    z-index: -1;
+}
+
+.NameImput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 50px;
+}
+
+.SurnameInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 70px;
+}
+
+.Name{
+    position: absolute;
+    z-index: 0;
+    margin-left: 790px;
+    margin-top: 65px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.Surname{
+
+    position: absolute;
+    z-index: 1;
+    margin-left: 790px;
+    margin-top: 100px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+
+}
+
+.ProjectInput {
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 110px;
+}
+
+.Project{
+    position: absolute;
+    z-index: 1;
+    margin-left: 840px;
+    margin-top: 140px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.GroupInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 150px;
+}
+
+.Group{
+    position: absolute;
+    z-index: 1;
+    margin-left: 840px;
+    margin-top: 180px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.submit {
+    position: absolute;
+    z-index: 0;
+    margin-left: 900px;
+    margin-top: 200px;
+}
