@@ -1,13 +1,9 @@
 package com.rivalgame.characters;
 
-import org.springframework.stereotype.Component;
-
-
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Component
 public class Characters implements Serializable {
     private static final long serialVersionUID = 1L;
 

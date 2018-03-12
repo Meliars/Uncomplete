@@ -15,10 +15,10 @@
 </head>
 <body>
 <div id="RegisterPane" >
-    <form action="register" method="post">
+    <form action="register"  method="post">
         <img class="RegPane" src="web/img/RegisterPane.png">
         <img class="NameImput" src="web/img/input.png">
-        <input id="Name" class="Name" type="text" name="name" type="text" placeholder="Imie"><br>
+        <input id="Name" class="Name" name="name" type="text" placeholder="Imie"><br>
 
         <input id="Surname" class="Surname" type="text" name="surname" type="text" placeholder="Nazwisko"><br>
         <img class="SurnameInput" src="web/img/input.png">
