@@ -6,24 +6,24 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
+<html ng-app="app">
 <head>
     <link rel="stylesheet" href="web/templates/Stylesheet.css" type="text/css"/>
     <meta charset="UTF-8">
     <title>Register</title>
 </head>
-<body>
+<body ng-controller="RegisterController as regControl">
 <div id="RegisterPane" >
-    <form action="register"  method="post">
+    <form action="register">
         <img class="RegPane" src="web/img/RegisterPane.png">
         <img class="NameImput" src="web/img/input.png">
-        <input id="Name" class="Name" name="name" type="text" placeholder="Imie"><br>
 
-        <input id="Surname" class="Surname" type="text" name="surname" type="text" placeholder="Nazwisko"><br>
+        <input id="Name" class="Name" name="name" type="text" ng-model="regControl.characters" placeholder="Imie"><br>
+
+        <input id="Surname" class="Surname" name="surname" type="text" ng-model="regControl.characters.surnameEmployer" placeholder="Nazwisko"><br>
         <img class="SurnameInput" src="web/img/input.png">
         <label>
-            <SELECT class="Project" name="project" type="text" style="width: 120px;">
+            <SELECT class="Project" name="project" ng-model="regControl.characters.projectEmployer" style="width: 120px;">
                 <OPTION>Reklamacje</OPTION>
                 <OPTION>Infolinia</OPTION>
                 <OPTION>BO</OPTION>
@@ -31,7 +31,7 @@
         </label><br>
         <img class="ProjectInput" src="web/img/input.png">
         <label>
-            <select class="Group" name="group" type="text" style="width: 120px;">
+            <select class="Group" name="group" ng-model="regControl.characters.groupEmployer" style="width: 120px;">
                 <option>Olsztyn</option>
                 <option>Gdańsk</option>
                 <option>Białystok</option>
@@ -39,8 +39,10 @@
         </label><br>
         <img class="GroupInput" src="web/img/input.png">
 
-        <input class="submit" ng-click="fetch()" type="submit">
+        <input class="submit" type="submit" ng-click="regControl.addUser(regControl.characters)"/>
     </form>
 </div>
+<script type="text/javascript" src="static/bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="static/js/app.js"></script>
 </body>
 </html>

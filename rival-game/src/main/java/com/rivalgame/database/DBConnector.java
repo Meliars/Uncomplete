@@ -15,13 +15,14 @@ public class DBConnector implements DataB {
     EntityManager entityManager;
 
     @Override
-    public void setUp() throws Exception {
+    public Characters setUp() throws Exception {
         sessionFactory= Persistence.createEntityManagerFactory("transcom-db");
 
+        return null;
     }
 
     @Override
-    public void save(Characters characters) {
+    public Characters save(Characters characters) {
         entityManager = sessionFactory.createEntityManager();
         entityManager.getTransaction().begin();
         entityManager.merge(characters);
@@ -29,7 +30,7 @@ public class DBConnector implements DataB {
         entityManager.close();
 
 
-
+        return characters;
     }
 
     @Override

@@ -42,7 +42,7 @@
     <a href="register.jsp">Rejestracja</a>
 </div>
 
-<script src="web/templates/angular.min.js"></script>
-<script src="web/templates/Scripts.js"></script>
+<script src="static/angular.min.js"></script>
+<script src="static/js/app.js"></script>
 </body>
 </html>
