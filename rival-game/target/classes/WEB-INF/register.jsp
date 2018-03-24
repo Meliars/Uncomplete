@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html ng-app="app">
 <head>
-    <link rel="stylesheet" href="web/templates/Stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="web/templates/RegSheet.css" type="text/css"/>
     <meta charset="UTF-8">
     <title>Register</title>
 </head>
@@ -16,9 +16,19 @@
 <div id="RegisterPane" >
     <form action="register">
         <img class="RegPane" src="web/img/RegisterPane.png">
-        <img class="NameImput" src="web/img/input.png">
+        <img class="LoginInput" src="web/img/input.png">
+        <input class="Login" type="text" ng-model="regControl.characters.login" placeholder="Login"></br>
 
-        <input id="Name" class="Name" name="name" type="text" ng-model="regControl.characters" placeholder="Imie"><br>
+        <img class="NameInput" src="web/img/input.png">
+        <input id="Name" class="Name" name="name" type="text" ng-model="regControl.characters.nameEmployer" placeholder="Imie"><br>
+
+        <img class="PassInput" src="web/img/input.png">
+        <input class="Password" id="password" type="password" ng-model="regControl.characters.password" placeholder="Hasło"><br>
+
+        <input class="PassMessage" id="passMessage" disabled="disabled" type="text" ng-model="passInputMessage">
+        <img class="RePassInput" src="web/img/input.png">
+        <input class="RePassword" id="rePassword" type="password" ng-model="regControl.characters.rePassword" placeholder="Powtórz hasło"><br>
+
 
         <input id="Surname" class="Surname" name="surname" type="text" ng-model="regControl.characters.surnameEmployer" placeholder="Nazwisko"><br>
         <img class="SurnameInput" src="web/img/input.png">
@@ -42,7 +52,7 @@
         <input class="submit" type="submit" ng-click="regControl.addUser(regControl.characters)"/>
     </form>
 </div>
-<script type="text/javascript" src="static/bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="static/js/app.js"></script>
+<script type="text/javascript" src="web/templates/bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="web/templates/js/app.js"></script>
 </body>
 </html>

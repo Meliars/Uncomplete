@@ -16,5 +16,10 @@ public class HomeController {
         return "register";
     }
 
+    @GetMapping("/error")
+    public String error(){
+        return "error";
+    }
+
 
 }

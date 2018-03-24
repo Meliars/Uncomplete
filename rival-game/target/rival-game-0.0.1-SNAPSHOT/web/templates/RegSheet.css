@@ -1,0 +1,171 @@
+body{
+    background-image: url("../img/tlo_logowania.jpg");
+}
+
+.RegPane{
+    position: absolute;
+    margin: auto;
+    margin-left: 600px;
+    margin-top: 25px;
+    z-index: -1;
+}
+
+.LoginInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 85px;
+}
+
+.Login{
+    position: absolute;
+    z-index: 0;
+    margin-left: 790px;
+    margin-top: 100px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.PassInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 100px;
+}
+
+.Password{
+    position: absolute;
+    z-index: 0;
+    margin-left: 790px;
+    margin-top: 115px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.RePassInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 130px;
+}
+
+.RePassword{
+    position: absolute;
+    z-index: 0;
+    margin-left: 790px;
+    margin-top: 145px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.NameInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 215px;
+}
+
+.SurnameInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 190px;
+}
+
+.Name{
+    position: absolute;
+    z-index: 0;
+    margin-left: 790px;
+    margin-top: 230px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.Surname{
+
+    position: absolute;
+    z-index: 1;
+    margin-left: 790px;
+    margin-top: 223px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+
+}
+
+.ProjectInput {
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 220px;
+}
+
+.Project{
+    position: absolute;
+    z-index: 1;
+    margin-left: 840px;
+    margin-top: 250px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.GroupInput{
+    position: absolute;
+    z-index: 0;
+    margin-left: 720px;
+    margin-top: 250px;
+}
+
+.Group{
+    position: absolute;
+    z-index: 1;
+    margin-left: 840px;
+    margin-top: 280px;
+    background-color:  transparent;
+    border: transparent;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+}
+
+.submit {
+    position: absolute;
+    z-index: 0;
+    margin-left: 900px;
+    margin-top: 300px;
+}
+
+.PassMessage{
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    color: red;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 580px;
+    margin-top: 95px;
+}

@@ -43,6 +43,6 @@
 </div>
 
 <script src="static/angular.min.js"></script>
-<script src="static/js/app.js"></script>
+<script src="web/templates/js/app.js"></script>
 </body>
 </html>

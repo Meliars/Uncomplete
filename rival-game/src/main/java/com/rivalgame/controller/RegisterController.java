@@ -21,10 +21,9 @@ public class RegisterController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public String saveChar(@RequestBody Characters characters) throws Exception {
-         dbConnector.setUp();
-         dbConnector.save(characters);
-         return "redirect:index";
-
+            dbConnector.setUp();
+            dbConnector.save(characters);
+            return "register";
 
     }
 
