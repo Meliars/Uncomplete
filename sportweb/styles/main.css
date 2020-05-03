@@ -1,0 +1,44 @@
+html, body {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+ }
+
+.banner p {
+    color: white;
+    background-color: black;
+}
+
+.box {
+    margin: auto 15% -50px;
+    /* Use the calc() function to calculate height of device for the footer */
+    min-height: calc(100vh - 40px);
+    padding-bottom: 70px;
+
+}
+
+.style {
+    background-color: black;
+    padding-top: 2%;
+    position: relative;
+
+}
+
+
+.content {
+background-color: #f2f2f2;
+}
+
+.footer {
+    background-color: black;
+
+}
+
+.footer p {
+    color: white;
+    margin-bottom: 0px;
+    padding: 0.5%;
+    padding-left: 68%;
+    height: 50px;
+
+}
