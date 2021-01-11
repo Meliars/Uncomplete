@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
+        <meta charset="utf-8">
         <title>Main page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <header class="banner"><p>Strefa dla osób aktywnych</p></header>
-            <div class="box">
-                    <img class="banimg" src="images/banner.png" alt="here is banner">
-                    <div class="style">
-                    </div>
-                <div class="content">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sequi non magni ratione libero voluptate totam cumque? Enim error corrupti possimus aliquam provident sapiente nulla. Neque animi aspernatur atque asperiores.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta.</p>
-                </div>
+        <main>
+            <header class="banner"><p>Strefa dla osób aktywnych</p></header>
+            <div class="logo">
+                <img class="banimg" src="images/banner.png" alt="here is a banner">
 
             </div>
-        <footer class="footer">
-            <p>Masz sugestie odnośnie działania serwisu? Napisz do mnie <a href="mail@gmail.com"><img src="images/e-mail.png" alt="odsyłacz obrazkowy"></a></p>
+                <div class="style">
+                </div>
 
-        </footer>
+                <div id="logPane">
+                    <p>Login: <input type="text" placeholder="insert user name" name="uname" required></p>
+                    <p>Hasło: <input type="password" placeholder="insert password" name="upass" required></p>
+                    <button title="Login">Zaloguj</button>
+                    <a>Wciąż nie masz konta? <a href="#">Zarejestruj się!</a></a>
+                </div>
+
+
+            <article class="content">
+                <header>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    </header>
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sequi non magni ratione libero voluptate totam cumque? Enim error corrupti possimus aliquam provident sapiente nulla. Neque animi aspernatur atque asperiores.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta.</p>
+                            <time datetime="2020-05-05T11:20:00"><small>2021-01-11 14:05</small></time>
+                        </div>
+            </article>
+
+            <nav class="navbar">
+                <div class="nav-menu">
+                    <h6>Menu nawigacyjne</h6>
+
+                    <ul>
+                     <li class="sublink">
+                            <a href="#">link1
+
+                             <ul class="submenu">
+                                    <li>Link1</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="sublink">
+                            <a href="#">link2
+
+                             <ul class="submenu">
+                                    <li>Link1</li>
+                                </ul>
+                            </a>
+                     </li>
+                     <li class="sublink">
+                         <a href="#">link3
+
+                             <ul class="submenu">
+                                    <li>Link1</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <footer class="footer">
+                <p>Masz sugestie odnośnie działania serwisu? Napisz do mnie <a href="mail@gmail.com"><img src="images/e-mail.png" alt="odsyłacz obrazkowy"></a></p>
+
+            </footer>
+        </main>
 
         <script type="text/javascript" src="scripts/nav.js"></script>
 
