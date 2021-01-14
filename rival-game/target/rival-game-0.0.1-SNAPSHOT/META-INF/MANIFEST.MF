@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: rival-game
-Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: root
-Implementation-Vendor-Id: com.rivalgame
-Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_151
-Main-Class: ${start-class}
-

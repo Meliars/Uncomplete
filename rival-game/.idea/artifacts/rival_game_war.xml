@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="rival-game:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="rival-game-0.0.1-SNAPSHOT.war">
-      <element id="artifact" artifact-name="rival-game:war exploded" />
-    </root>
-  </artifact>
-</component>
