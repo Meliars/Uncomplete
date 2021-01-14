@@ -1,0 +1,152 @@
+@use '_colors.scss' as *;
+
+html, body {
+    background-color: white;
+    min-height: 100%;
+ }
+
+ main {
+    display: grid;
+    min-height: calc(100vh - 30px);
+    grid-template-columns: 200px 1fr 300px 200px;
+    grid-template-rows: 30px 180px 30px auto 60px;
+    grid-template-areas:
+    'header header header header'
+    '. logo logPane .'
+    '. style style .'
+    'navbar content content .'
+    'footer footer footer footer';
+    column-gap: 5px;
+}
+
+header p {
+    text-align: right;
+    padding-right: 3%;
+}
+
+@font-face {
+    font-family: 'rye';
+    src: url(../font/Rye-Regular.ttf);
+}
+
+.banner {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    p {
+        color: white;
+        background-color: $FT-color;
+    }
+}
+
+.logo {
+    grid-area: logo;
+    margin: 5px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+
+}
+
+.banimg {
+    width:600px;
+    height: 150px;
+
+}
+
+.style {
+    background-color: $FT-color;
+    padding-top: 2%;
+    grid-area: style;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#logPane {
+    grid-area: logPane;
+    margin: 5px;
+    width: 1fr;
+}
+
+.content {
+    background-color: $primary-color;
+    padding: 1% 3% 2% 3%;
+    grid-area: content;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    h1 {
+        font-family: rye;
+    }
+
+    small {
+            text-align: right;
+            padding-left: 90%;
+    }
+
+}
+
+
+.navbar {
+    grid-area: navbar;
+    display: block;
+    background-color: $primary-color;
+
+    a {
+        display: inline-block;
+    background-color: $primary-color;
+    font-family: rye;
+    color: rgb(164, 164, 167);
+    text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+    opacity: 0.7;
+    }
+
+    li {
+        list-style-type: none;
+        padding-left: 0%;
+    }
+
+    h6 {
+        text-align: center;
+        color: rgb(164, 164, 167);
+        text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+        opacity: 0.7;
+        font-family: rye;
+        border-bottom: 3px outset rgb(127, 127, 129);
+    }
+
+}
+
+
+.submenu {
+    display: none;
+
+}
+
+ .sublink:hover .submenu {
+    display: block;
+    border-style: none;
+
+
+}
+
+.nav-menu {
+    border: 7px outset rgb(127, 127, 129);
+
+}
+
+.footer {
+    background-color: $FT-color;
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    p {
+    color: white;
+    margin-bottom: 0px;
+    padding: 0.5%;
+    padding-left: 68%;
+    height: 50px;
+    }
+}
